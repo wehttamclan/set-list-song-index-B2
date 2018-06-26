@@ -12,8 +12,11 @@ Your challenge is to recreate the following image using HTML and CSS.
 
 ## Getting Started
 Open up your set-list repo and update your songs/index.erb file to reflect the one provided.
+
 Add the `style.css` file within the public folder.
+
 You likley only have four songs in the database, so open up tux and add the following: 
+
 ``` 
 Song.create(title: "Float On", length: 208, Play Count: 78900)
 Song.create(title: "Thriller", length: 357, Play Count: 87030)
