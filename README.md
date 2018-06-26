@@ -28,4 +28,4 @@ Only work for one hour!
 Include a screenshot of your work in a browser
 Submit your work through a PR
 
-![this](songs-index.png).
+![this](songs-index.png)
