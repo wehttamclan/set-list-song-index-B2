@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style>
+  .grid-container {
+    display: grid;
+    grid: 150px / auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-container>div {
+    background-color: rgba(194, 255, 236, 0.8);
+    text-align: center;
+    padding:20px 0;
+    font-size: 30px;
+  }
+  </style>
+  <meta charset="utf-8">
+  <link rel='stylesheet' href='style.css' title='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Galada|Shrikhand" rel="stylesheet">
+  <title>Songs</title>
+</head>
+<body>
+  <h1>Songs</h1>
+  <% @songs.each do |song| %>
+    <div class="grid-container">
+      <p> <%= song.title %></p>
+      <p> <%= "#{song.length} seconds" %></p>
+      <p> <%= "Play count: #{song.play_count}" %></p>
+      <% if song.playlist %>
+        <p> <%= song.playlist.name %></p>
+      <% end %>
+    </div>
+  <% end %>
+</body>
+</html>
